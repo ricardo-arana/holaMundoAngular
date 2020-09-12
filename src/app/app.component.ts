@@ -5,7 +5,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   title = 'HolaMundo';
   nombres = ['Ricardo', 'Martin'];
   nombre: string;
@@ -18,7 +18,10 @@ export class AppComponent {
   constructor() {
     this.mostrar = false;
     this.nombre = this.nombres[0];
+
   }
+
+
 
   cambiarNombre() {
     this.indice = this.indice === 0 ? 1 : 0;
