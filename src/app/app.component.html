@@ -1,22 +1,6 @@
 <div class="container mt-5">
     <app-saludar></app-saludar>
-    <hr>
-    <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <div *ngIf="mostrar">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <button (click)="verMas()" class="btn btn-primary"> Ver {{ masmenos }}</button>
-    <hr>
-    <div class="form-inline">
-        <div class="form-group">
-            <input value="por defecto" class="form-control" #tarea >
-        </div>
-        <button (click)="agregar(tarea.value)" class="btn btn-primary ml-2"> Agregar </button>
-        
-    </div>
-    <ul>
-        <li *ngFor="let tarea of tareas; index as i">{{ i + 1 }} - {{ tarea }}</li>
-    </ul>
+    <app-vermas></app-vermas>
+    <app-todo></app-todo>
+    
 </div>

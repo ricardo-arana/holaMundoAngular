@@ -1,0 +1,10 @@
+<div class="form-inline">
+    <div class="form-group">
+        <input value="por defecto" class="form-control" #tarea >
+    </div>
+    <button (click)="agregar(tarea.value)" class="btn btn-primary ml-2"> Agregar </button>
+    
+</div>
+<ul>
+    <li *ngFor="let tarea of tareas; index as i">{{ i + 1 }} - {{ tarea }}</li>
+</ul>
