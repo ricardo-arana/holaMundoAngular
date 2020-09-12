@@ -11,6 +11,7 @@ export class AppComponent {
   nombre: string;
   mostrar: boolean;
   indice = 0;
+  masmenos = 'más';
 
   constructor() {
     this.mostrar = false;
@@ -23,6 +24,7 @@ export class AppComponent {
   }
 
   verMas() {
-    this.mostrar = true;
+    this.mostrar = !this.mostrar;
+    this.masmenos = this.mostrar ? 'menos' : 'más';
   }
 }
